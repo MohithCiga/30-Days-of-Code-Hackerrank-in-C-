@@ -1,0 +1,33 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <map>
+using namespace std;
+
+
+int main() 
+{
+    long long int n;
+    cin>>n;
+    map<string,int> m;
+    string s;
+    long long int i;
+    for( i=0;i<n;i++)
+    {
+        cin>>s;
+        if(!m[s])
+        cin>>m[s];
+        
+    }
+
+    while(cin>>s)
+    {
+        if(m[s])
+        cout<<ch<<"="<<m[s]<<endl;
+        else
+        cout<<"Not found"<<endl;
+    }
+    return 0;
+}
